@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Suas Compras de Mercado</string>
+    <string name="title_activity_main">Suas Compras de Mercado</string>
+    <string name="package_name">com.suascompras.mercado</string>
+    <string name="custom_url_scheme">com.suascompras.mercado</string>
+</resources>
