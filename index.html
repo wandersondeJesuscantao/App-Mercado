@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suas Compras de Mercado</title>
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="description" content="Assistente inteligente de compras com IA para economizar no mercado" />
+    <meta name="theme-color" content="#10b981" />
+    <link rel="icon" type="image/png" href="https://picsum.photos/seed/appicon192/192/192" />
+    <link rel="apple-touch-icon" href="https://picsum.photos/seed/appicon192/192/192" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('Service Worker registrado!', reg))
+            .catch(err => console.log('Erro ao registrar Service Worker', err));
+        });
+      }
+    </script>
+  </body>
+</html>
+

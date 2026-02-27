@@ -1,0 +1,7 @@
+{
+  "name": "Suas Compras de Mercado",
+  "description": "Assistente inteligente de compras que usa IA para analisar preços, organizar finanças, sugerir receitas e facilitar compras online.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
